@@ -1,0 +1,27 @@
+/* 
+In a grid system, there will be row and column.
+
+For row and column: from left/top the start is 1 and it increases
+For row and column: from right/bottom the start is -1 and it increases
+
+There is row height
+There is column width
+*/
+
+.container {
+    /* tells that the container is going to be a grid container */
+    display: grid;
+    
+    /* number of columns and their size in px */
+    /* grid-template-columns: 100px 100px; */
+
+    /* auto gets the remaining space */
+    grid-template-columns: 100px auto 100px;
+
+    /* number of rows and their size in px, if you don't specify the size of created rows based on number of columns, there the style will be default */
+
+    /* grid-template-rows: 300px 300px 300px; */
+
+
+}
+
