@@ -10,6 +10,8 @@
         .container {
             height: 100%;
             display: grid;
+            grid-template-columns: repeat(5, 90px);
+            grid-gap: 5px;
             /* using auto-fit don't hard code number of columns */
             /* grid-template-columns: repeat(auto-fit, 90px); */
             /* now make the column width also a variable */
@@ -18,8 +20,43 @@
             /* auto-fill creates blank columns after all the items get in one one row */
             /* grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); */
 
-            
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 90px);
+
+            /* implictly created rows don't get any height when using grid-template-rows. to solve this problem use this */
+            /* grid-auto-rows: 1fr; */
+
+            /* for auto columns */
+            /* grid-auto-columns: 1fr; */
+
+
+            /* alignment */
+
+
+            /* justify content moves items inside one container */
+            /* justify-content: left; */
+            /* justify-content: right; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+
+            /* align content does the same in cross axis */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: flex-start; */
+
+            /* justify items has their own box and they align in their individual box */
+            /* justify-items: end; */
+            /* justify-items: center; */
+
+            /* align items does the same */
+            /* align-items: center; */
+        }
+        .seven {
+            /* works as justify items and align items. but for individual item */
+            /* justify-self: center; */
+            /* align-self: center; */
         }
     </style>
 </head>
@@ -31,7 +68,7 @@
         <div>4</div>
         <div>5</div>
         <div>6</div>
-        <div>7</div>
+        <div class="seven">7</div>
         <div>8</div>
         <div>9</div>
         <div>10</div>
