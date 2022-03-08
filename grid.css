@@ -11,16 +11,35 @@ There is column width
 .container {
     /* tells that the container is going to be a grid container */
     display: grid;
+    /* height: 500px; */
     
     /* number of columns and their size in px */
     /* grid-template-columns: 100px 100px; */
+    grid-template-columns: repeat(12, 1fr);
 
     /* auto gets the remaining space */
-    grid-template-columns: 100px auto 100px;
+    /* grid-template-columns: 100px auto 100px; */
+
+    /* responsive way to allocate space for rows and columns */
+    /* grid-template-columns: 1fr 2fr; */
+    /* grid-template-rows: 1fr 1fr; */
 
     /* number of rows and their size in px, if you don't specify the size of created rows based on number of columns, there the style will be default */
 
     /* grid-template-rows: 300px 300px 300px; */
+
+    /* shorthand property to add grid-template-columns and grid-template-rows */
+    /* grid-template: [grid-template-rows] / [grid-template-columns]; */
+    /* grid-template: 2fr 3fr 3fr / 2fr 1fr; */
+
+    /* to get the grid row gap */
+    /* grid-row-gap: 5px; */
+
+    /* get the grid column gap */
+    /* grid-column-gap: 5px; */
+
+    /* to get grid row and column gap using shorthand */
+    /* grid-gap: 5px; */
 
 
 }
